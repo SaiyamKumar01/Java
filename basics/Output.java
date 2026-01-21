@@ -1,4 +1,4 @@
-public class OutputExample {
+public class Output {
     public static void main(String[] args) {
 
         // println -> prints and moves to next line
