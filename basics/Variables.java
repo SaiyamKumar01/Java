@@ -15,6 +15,10 @@ public class Variables {
 
         float number = 5.9f;
         System.out.println(number);
+
+        //Cant change the Value
+        final int n = 56; 
+        System.out.println(n);
     }
 }
 
