@@ -1,4 +1,4 @@
-public class Variables {
+public class BVariables {
     public static void main(String[] args) {
 
         int num = 15;
