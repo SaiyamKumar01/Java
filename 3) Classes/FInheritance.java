@@ -1,4 +1,4 @@
-// Inheritance means inheriting attributes and methods from another class
+// Inheritance means inheriting attributes and methods from another class - reuse code
 public class FInheritance {
 
     // Parent class => (Super-class)
@@ -11,7 +11,7 @@ public class FInheritance {
     }
 
     // Child class => (Sub-class)
-    static class Car extends Vehicle { //used extend keyword
+    static class Car extends Vehicle {  //used extend keyword
         private String carname = "Mustang";
 
         public static void main(String[] args) {
