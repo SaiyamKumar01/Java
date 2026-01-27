@@ -1,29 +1,39 @@
-//Same method name, different output
+// Same method name, different output
+// In two words - many forms
+// Code reusability: reuse attributes and methods of an existing class
 public class GPolymorphism {
-    static class Animal{
-        public void animalsound(){
+
+    static class Animal {
+        public void animalsound() {
             System.out.println("Animal sound");
         }
-        
     }
-    static class Dog extends Animal{
-        public void animalsound(){
+    //super keyword -> refer to the parent class of a subclass
+    //super.method() → call parent’s method
+    //super.variable → use parent’s variable
+    //super() → call parent’s constructor
+
+    static class Dog extends Animal {
+        public void animalsound() {
+            super.animalsound(); // calls parent method
             System.out.println("bhau bhau");
         }
-
     }
-    static class Cat extends Animal{
-        public void animalsound(){
+
+    static class Cat extends Animal {
+        public void animalsound() {
+            super.animalsound(); // calls parent method
             System.out.println("meow meow");
         }
-
     }
-    static class Pig extends Animal{
-        public void animalsound(){
+
+    static class Pig extends Animal {
+        public void animalsound() {
+            super.animalsound(); // calls parent method
             System.out.println("wee wee");
         }
-
     }
+
     public static void main(String[] args) {
         Animal myanimal = new Animal();
         Animal mydog = new Dog();
@@ -34,6 +44,5 @@ public class GPolymorphism {
         mydog.animalsound();
         mycat.animalsound();
         mypig.animalsound();
-
     }
 }
