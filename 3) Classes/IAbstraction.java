@@ -6,9 +6,9 @@
         void sleep(){
             System.out.println("I m sleeping");
         }
- 
     }
     class Pig extends Animal{
+        @Override
         public void animalSound(){
             System.out.println("Wee-Wee");
         }
